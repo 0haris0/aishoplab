@@ -2,10 +2,7 @@ import RootLayout from "@/components/RootLayout";
 import "./globals.css";
 
 export const metadata = {
-  title: {
-    template: "Ai Shop Lab",
-    separator: " | ",
-  },
+  title: "Ai Shop Lab",
 };
 
 export default function Layout({ children }) {
