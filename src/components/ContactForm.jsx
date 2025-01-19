@@ -1,13 +1,21 @@
+'use client';
+
 import React from "react";
 import FadeIn from "./FadeIn";
+import emailjs from "emailjs-com";
 import TextInput from "./TextInput";
 import RadioInput from "./RadioInput";
 import Button from "./Button";
 
 const ContactForm = () => {
-  return (
+const handleFormSubmit = (e) => {
+  e.preventDefault();
+  console.log('Form submitted',e);
+}
+
+return (
     <FadeIn>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
