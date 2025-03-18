@@ -1,14 +1,16 @@
-import Clients from '@/components/Clients';
-import ContactSection from '@/components/ContactSection';
-import Container from '@/components/Container';
-import FadeIn from '@/components/FadeIn';
-import Services from '@/components/Services';
-import Testimonials from '@/components/Testimonials';
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg';
+/* jshint esversion: 6 */
+'use client'
+import Clients from "@/components/Clients";
+import ContactSection from "@/components/ContactSection";
+import Container from "@/components/Container";
+import FadeIn from "@/components/FadeIn";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+import NexGenPricing from "@/components/NexGenPricing";
 
+import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
+export default function Home() {
 
-export default function Home()
-  {
   return (
       <main className="text-black">
         <Container className="mt-24 sm:mt-32">

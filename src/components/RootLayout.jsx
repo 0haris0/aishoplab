@@ -1,5 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
+import {usePathname, useRouter} from 'next/navigation';
 import { useEffect, useId, useRef, useState } from "react";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Container from "./Container";
@@ -21,6 +21,7 @@ const Header = ({
   onToggle,
   toggleRef,
 }) => {
+  const router = useRouter();
   // Container
   return (
     <Container>
@@ -30,7 +31,7 @@ const Header = ({
           <Logo invert={invert}>Ai Shop Lab</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
+          <Button onClick={()=>router.push('/contact')} invert={invert}>
             Contact us
           </Button>
           <button
