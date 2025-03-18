@@ -1,4 +1,4 @@
-export function 
+export function constructMetadata({
   title = "AI Shop lab ",
   description = "Boost your online presence with our expert web and application development services. From e-commerce to custom content management, we craft tailored digital solutions for businesses of all sizes. Let's turn your ideas into reality!",
   image = "/agency.PNG",
