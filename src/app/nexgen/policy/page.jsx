@@ -11,10 +11,10 @@ const NexGenPolicy = () =>
 
           <p className={"text-xs py-2"}><em>Last updated: 19. January 2025</em></p>
 
-          <p><strong>NexGen</strong> ("we," "our," or "us")
-            is committed to protecting the privacy and security of our users'
+          <p><strong>NexGen</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;)
+            is committed to protecting the privacy and security of our users
             personal information. This Privacy Policy explains how we collect,
-            use, and disclose information when you use our <strong>NexGen</strong> (the "App") on the Shopify platform.</p>
+            use, and disclose information when you use our <strong>NexGen</strong> (the &quot;App&quot;) on the Shopify platform.</p>
 
           <h2 className={"pt-5 text-xl font-bold pb-1"}>1. Information We Collect</h2>
           <p>We collect information to provide, improve, and secure our
@@ -22,7 +22,7 @@ const NexGenPolicy = () =>
 
           <h3>Information from Shopify</h3>
           <p>To use our App, you must authorize access to your Shopify store
-            data. We collect the following information through Shopify's
+            data. We collect the following information through Shopify&apos;s
             API:</p>
           <ul>
             <li className={"ml-2"}>Store information (e.g., store name, email, and other
@@ -57,7 +57,7 @@ const NexGenPolicy = () =>
             <li className={"ml-2"}><strong>Customer Support</strong>: To address any support
               inquiries or troubleshooting requests.
             </li>
-            <li className={"ml-2"}><strong>Compliance</strong>: To comply with Shopify’s Terms of
+            <li className={"ml-2"}><strong>Compliance</strong>: To comply with Shopify&apos;s Terms of
               Service and other applicable legal requirements.
             </li>
           </ul>
@@ -96,7 +96,7 @@ const NexGenPolicy = () =>
             <li className={"ml-2"}>Withdraw consent, where applicable</li>
           </ul>
           <p>To exercise these rights, contact us at <a
-              href="mailto:haris.valj@gmail.com">haris.valj@gmail.com</a>.</p>
+              href="mailto:policy@aishoplab.com">policy@aishoplab.com</a>.</p>
 
           <h2 className={"pt-5 text-xl font-bold pb-1"}>7. Third-Party Links</h2>
           <p>The App may include links to third-party websites or services. We
@@ -112,7 +112,7 @@ const NexGenPolicy = () =>
           <p>For any questions about this Privacy Policy or our privacy
             practices, please contact us at:</p>
           <p><strong>Email</strong>: <a
-              href="mailto:haris.valj@gmail.com">haris.valj@gmail.com</a></p>
+              href="mailto:policy@aishoplab.com">policy@aishoplab.com</a></p>
           </div>
 
         </Container>
