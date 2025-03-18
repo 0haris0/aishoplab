@@ -1,6 +1,6 @@
 export function constructMetadata({
-  title = "Abdullah Agency ",
-  description = "Abdullah Agency is an open-source website.",
+  title = "Ai Shop Lab",
+  description = "AI Shop Lab is your ultimate Shopify assistant, using AI to optimize product listings, enhance SEO, and analyze market trends. Boost sales effortlessly with smart automation and competitor insights",
   image = "/agency.PNG",
   icons = "/favicon.ico",
   noIndex = false,
@@ -25,7 +25,7 @@ export function constructMetadata({
       creator: "@KING_IN_JUNGLE",
     },
     icons,
-    metadataBase: new URL("https://agency-website-abdullah.vercel.app/"),
+    metadataBase: new URL("https://aishoplab.com"),
     themeColor: "#FFF",
     ...(noIndex && {
       robots: {

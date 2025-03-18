@@ -3,8 +3,10 @@ import Container from "./Container";
 import FadeIn from "./FadeIn";
 import Button from "./Button";
 import Offices from "./Offices";
+import {useRouter} from 'next/navigation';
 
 const ContactSection = () => {
+  const router = useRouter();
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn className="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
@@ -13,7 +15,7 @@ const ContactSection = () => {
             Tell us about your project
           </h2>
           <div className="mt-6 flex">
-            <Button href={"/contact"} invert>
+            <Button onClick={()=>router.push('/contact')} invert>
               Say Hello
             </Button>
           </div>

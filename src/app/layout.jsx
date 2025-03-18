@@ -5,8 +5,7 @@ import ReactGA from 'react-ga4';
 
 export const metadata = {
   title      : 'Studio',
-  description:
-      'We are a group of developer working at the intersection of design and technology.',
+  description: 'We are a group of developer working at the intersection of design and technology.',
   image      : '/images/social.jpg',
   url        : 'https://aishoplab.com',
   type       : 'website',

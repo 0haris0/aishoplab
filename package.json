@@ -2,6 +2,7 @@
   "name": "studioyt",
   "version": "0.1.0",
   "private": true,
+  "esversion": 6,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,11 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@getbrevo/brevo": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "autoprefixer": "10.4.15",
     "clsx": "^2.0.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.18",
     "framer-motion": "^10.16.0",
+    "lucide-react": "^0.479.0",
     "next": "13.4.18",
     "postcss": "8.4.28",
     "react": "18.2.0",
