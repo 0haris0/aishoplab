@@ -31,7 +31,8 @@ const ContactSection = () => {
         </div>
       </FadeIn>
     </Container>
+
   );
-};
+  };
 
 export default ContactSection;

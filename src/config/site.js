@@ -1,6 +1,6 @@
-export function constructMetadata({
-  title = "Ai Shop Lab",
-  description = "AI Shop Lab is your ultimate Shopify assistant, using AI to optimize product listings, enhance SEO, and analyze market trends. Boost sales effortlessly with smart automation and competitor insights",
+export function 
+  title = "AI Shop lab ",
+  description = "Boost your online presence with our expert web and application development services. From e-commerce to custom content management, we craft tailored digital solutions for businesses of all sizes. Let's turn your ideas into reality!",
   image = "/agency.PNG",
   icons = "/favicon.ico",
   noIndex = false,
