@@ -1,4 +1,7 @@
+'use client';
+import React from 'react';
 import Container from '@/components/Container';
+import { useRouter } from 'next/navigation';
 
 
 const NexGenPolicy = () =>

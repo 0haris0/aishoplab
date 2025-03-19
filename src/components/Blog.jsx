@@ -1,4 +1,5 @@
-import {Image} from "next/image";
+import {Image} from 'next/image';
+
 
 const posts = [
   {
@@ -60,10 +61,11 @@ const Blog  = () =>
                     <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{post.description}</p>
                   </div>
                   <div className="relative mt-8 flex items-center gap-x-4">
-                    <div   className="size-10 rounded-full bg-gray-50">
+                    <div className="size-10 rounded-full bg-gray-50">
 
                       <Image
                           src={post.author.imageUrl}
+                          alt={'Author'}
                       />
                     </div>
                     <div className="text-sm/6">
