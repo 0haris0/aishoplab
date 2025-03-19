@@ -1,8 +1,9 @@
 'use client';
-
+import React from 'react';
 import NexGenPricing from '@/components/NexGenPricing';
 import Blog from '@/components/Blog';
 import Accordion from '@/components/Accordion';
+import { useRouter } from 'next/navigation';
 
 
 const accordionItems = [
@@ -45,7 +46,7 @@ const accordionItems = [
   {
     title  : 'How do I track improvements after using NexGen?',
     content: 'NexGen provides a performance dashboard where you can track SEO improvements, sales trends, and product visibility over time.',
-  },
+  }
 ];
 
 const NexGenPage = () =>
@@ -55,11 +56,11 @@ const NexGenPage = () =>
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
+
   return (
       <>
         <NexGenPricing/>
         <Accordion items={accordionItems}/>
-        <Blog/>
       </>
   );
   };
