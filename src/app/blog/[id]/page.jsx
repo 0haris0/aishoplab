@@ -1,11 +1,17 @@
 import blogs from '@/app/blog/blogs.json';
 import Container from '@/components/Container';
-import {BlogListing} from '@/components/BlogListing';
+import { BlogListing } from '@/components/BlogListing';
 
+// Generate static paths for all blog posts
+export async function generateStaticParams() {
+  // Map over the blogs array to create the params for each blog post
+  return blogs.map((blog) => ({
+    id: blog.id.toString(), // Ensure the ID is a string
+  }));
+}
 
-export default function BlogDetailPage({params})
-  {
-  const {id} = params;
+export default function BlogDetailPage({ params }) {
+  const { id } = params;
 
   // Find the blog with the matching ID
   const blog = blogs.find((blog) => blog.id === id);
@@ -15,19 +21,17 @@ export default function BlogDetailPage({params})
   }
 
   return (
-      <Container className={'mt-24 sm:mt-32 lg:mt-40'}>
-        <div className={'inline-flex gap-4 align-top columns-3'}>
-
-          <div className={'w-3/5 '}>
-
-            <h1 className={'text-black text-3xl'}>{blog.title}</h1>
-            <p className={'text-black text-xs'}>Published on: {blog.date}</p>
-            <div className={'mt-2 text-black text-md'}>{blog.content}</div>
-          </div>
-          <div className={'w-2/5'}>
-            <BlogListing site={'single-page'}/>
-          </div>
+    <Container className={'mt-24 sm:mt-32 lg:mt-40'}>
+      <div className={'inline-flex gap-4 align-top columns-3'}>
+        <div className={'w-3/5'}>
+          <h1 className={'text-black text-3xl'}>{blog.title}</h1>
+          <p className={'text-black text-xs'}>Published on: {blog.date}</p>
+          <div className={'mt-2 text-black text-md'}>{blog.content}</div>
         </div>
-      </Container>
+        <div className={'w-2/5'}>
+          <BlogListing site={'single-page'} />
+        </div>
+      </div>
+    </Container>
   );
-  }
+}
