@@ -6,28 +6,20 @@ export const navigation = [
     title: 'Work',
     links: [
       {
-        title: 'AI-Powered E-commerce Platform',
-        href : '/work/ai-ecommerce',
+        title: 'Dashboard Analytics Platform',
+        href : '/work/dashboard-analytics',
       },
       {
-        title: 'DeFi Yield Farming Dashboard',
-        href : '/work/defi-dashboard',
+        title: 'Employee Management System',
+        href : '/work/employee-management',
       },
       {
-        title: 'Real-time Collaborative Editor',
-        href : '/work/collaborative-editor',
+        title: 'Inventory Control System',
+        href : '/work/inventory-control',
       },
       {
-        title: 'NFT Marketplace with Web3',
-        href : '/work/nft-marketplace',
-      },
-      {
-        title: 'Edge Computing IoT Platform',
-        href : '/work/iot-platform',
-      },
-      {
-        title: 'Metaverse Social Network',
-        href : '/work/metaverse-social',
+        title: 'Customer Relationship Portal',
+        href : '/work/crm-portal',
       },
       {
         title: (
