@@ -6,16 +6,16 @@ export const navigation = [
     title: 'Work',
     links: [
       {
-        title: 'AH MANA3RAF',
-        href : '/work/amazonclone',
+        title: 'AI-Powered E-Commerce Platform',
+        href : '/work/ai-ecommerce',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/bazar',
+        title: 'Next.js 15 Real-Time Dashboard',
+        href : '/work/nextjs-dashboard',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/blog101',
+        title: 'React Native Web3 Wallet',
+        href : '/work/web3-wallet',
       },
       {
         title: (
