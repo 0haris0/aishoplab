@@ -6,16 +6,28 @@ export const navigation = [
     title: 'Work',
     links: [
       {
-        title: 'AH MANA3RAF',
-        href : '/work/amazonclone',
+        title: 'AI-Powered E-commerce Platform',
+        href : '/work/ai-ecommerce',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/bazar',
+        title: 'DeFi Yield Farming Dashboard',
+        href : '/work/defi-dashboard',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/blog101',
+        title: 'Real-time Collaborative Editor',
+        href : '/work/collaborative-editor',
+      },
+      {
+        title: 'NFT Marketplace with Web3',
+        href : '/work/nft-marketplace',
+      },
+      {
+        title: 'Edge Computing IoT Platform',
+        href : '/work/iot-platform',
+      },
+      {
+        title: 'Metaverse Social Network',
+        href : '/work/metaverse-social',
       },
       {
         title: (
