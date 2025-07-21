@@ -6,16 +6,20 @@ export const navigation = [
     title: 'Work',
     links: [
       {
-        title: 'AH MANA3RAF',
-        href : '/work/amazonclone',
+        title: 'Dashboard Analytics Platform',
+        href : '/work/dashboard-analytics',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/bazar',
+        title: 'Employee Management System',
+        href : '/work/employee-management',
       },
       {
-        title: 'AH MANA3RAF',
-        href : '/work/blog101',
+        title: 'Inventory Control System',
+        href : '/work/inventory-control',
+      },
+      {
+        title: 'Customer Relationship Portal',
+        href : '/work/crm-portal',
       },
       {
         title: (
