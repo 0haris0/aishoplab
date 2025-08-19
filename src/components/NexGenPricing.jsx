@@ -5,8 +5,8 @@ const tiers = [
   {
     name        : 'Basic Plan',
     id          : 'tier-basic',
-    href        : '#',
-    priceMonthly: '$5.99',
+    href        : 'https://apps.shopify.com/analytics-app-2?plan=1',
+    priceMonthly: '$2.99',
     description : 'Ideal for small businesses looking to optimize a few products.',
     features    : [
       'Analyze your shop',
@@ -19,8 +19,8 @@ const tiers = [
   {
     name        : 'Professional Plan',
     id          : 'tier-professional',
-    href        : '#',
-    priceMonthly: '$9.99',
+    href        : 'https://apps.shopify.com/analytics-app-2?plan=2',
+    priceMonthly: '$4.99',
     description : 'A great choice for professionals who need more product optimizations.',
     features    : [
       'Analyze your shop',
@@ -35,8 +35,8 @@ const tiers = [
   {
     name        : 'Enterprise Plan',
     id          : 'tier-enterprise',
-    href        : '#',
-    priceMonthly: '$29.99',
+    href        : 'https://apps.shopify.com/analytics-app-2?plan=3',
+    priceMonthly: '$19.99',
     description : 'For businesses requiring high-volume product enhancements and AI optimization.',
     features    : [
       'Analyze your shop',
