@@ -14,6 +14,11 @@ export const SocialMediaProfiles = [
         href: "https://www.youtube.com/watch?v=kOe7XTPPnzM",
         icon: BsYoutube,
     },
+    {
+        title: "Facebook",
+        href: "https://www.facebook.com/people/NexGen/61581919571970/",
+        icon: BsFacebook,
+    }
 
 ];
 
