@@ -11,7 +11,7 @@ import {
 export const SocialMediaProfiles = [
     {
         title: "Youtube",
-        href: "https://www.youtube.com/#",
+        href: "https://www.youtube.com/watch?v=kOe7XTPPnzM",
         icon: BsYoutube,
     },
 
