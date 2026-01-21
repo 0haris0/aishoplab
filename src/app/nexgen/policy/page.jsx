@@ -1,159 +1,110 @@
 'use client';
+
 import React from 'react';
 import Container from '@/components/Container';
-import { useRouter } from 'next/navigation';
 
+const NexGenPolicy = () => {
+    return (
+        <div className="text-black py-12 bg-gray-50">
+            <Container>
+                <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-sm font-sans">
 
-const NexGenPolicy = () =>
-  {
-    const router = useRouter();
-    if (router.isFallback) {
-      return <div>Loading...</div>;
-    }
-  return (
-      <div className={'text-black py-10'}>
-        <Container>
-          <h1 className={'text-2xl'}>Privacy Policy</h1>
-          <div className={'pl-2'}>
+                    {/* TITLE & INTRO */}
+                    <div className="mb-8 border-b pb-6">
+                        <h1 className="text-3xl font-bold mb-6 text-gray-900">
+                            NexGen Privacy Policy
+                        </h1>
+                        <p className="mb-4 text-gray-700">
+                            <strong>NexGen</strong> (&quot;the App&quot;) provides product enhancement, optimization, and analytics services (&quot;the Service&quot;) to merchants who use Shopify to power their stores. This Privacy Policy describes how personal information is collected, used, and shared when you install or use the App in connection with your Shopify-supported store.
+                        </p>
+                    </div>
 
-            <p className={'text-xs py-2'}><em>Last updated: 19. January
-              2025</em></p>
+                    <div className="space-y-8 text-gray-700 leading-relaxed">
 
-            <p>
-              <strong>NexGen</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;)
-              is committed to protecting the privacy and security of our users
-              personal information. This Privacy Policy explains how we collect,
-              use, and disclose information when you use
-              our <strong>NexGen</strong> (the &quot;App&quot;) on the Shopify
-              platform.</p>
+                        {/* SECTION: Personal Information the App Collects */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Personal Information the App Collects</h2>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>1. Information We
-              Collect</h2>
-            <p>We collect information to provide, improve, and secure our
-              services. Information collected includes:</p>
+                            <p className="mb-3">When you install the App, we are automatically able to access certain types of information from your Shopify account:</p>
+                            <ul className="list-disc pl-6 space-y-2 mb-4">
+                                <li><strong>Store Information:</strong> Store name, email address, and other identifiers.</li>
+                                <li><strong>Product Data:</strong> Product titles, descriptions, images, and analytics data.</li>
+                                <li><strong>Order Data:</strong> Information regarding orders as needed for App features and functionalities.</li>
+                                <li><strong>Customer Data:</strong> Information regarding customers where applicable and authorized.</li>
+                            </ul>
 
-            <h3>Information from Shopify</h3>
-            <p>To use our App, you must authorize access to your Shopify store
-              data. We collect the following information through Shopify&apos;s
-              API:</p>
-            <ul>
-              <li className={'ml-2'}>Store information (e.g., store name, email,
-                and other
-                identifiers)
-              </li>
-              <li className={'ml-2'}>Product data, including titles,
-                descriptions, images, and
-                analytics
-              </li>
-              <li className={'ml-2'}>Order data, as needed for features and
-                functionalities
-              </li>
-              <li className={'ml-2'}>Customer data, where applicable and
-                authorized
-              </li>
-            </ul>
+                            <p className="mb-3">Additionally, we collect the following types of personal information from you and/or your customers once you have installed the App:</p>
+                            <ul className="list-disc pl-6 space-y-2 mb-4">
+                                <li>Information about you and others who may access the App on behalf of your store, such as your name, address, email address, phone number, and billing information.</li>
+                                <li>Information about individuals who visit your store, such as their IP address, web browser details, time zone, and information about the cookies installed on the particular device.</li>
+                                <li>Information about how you interact with the App, such as actions taken, pages viewed, and features used.</li>
+                            </ul>
 
-            <h3>Usage Data</h3>
-            <p>We collect data on how you interact with the App, such as actions
-              taken within the App, pages viewed, and features used, to improve
-              our services and deliver a better user experience.</p>
+                            <p className="mb-3">We collect personal information directly from the relevant individual, through your Shopify account, or using the following technologies:</p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li><strong>“Cookies”</strong> are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit <a href="http://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">http://www.allaboutcookies.org</a>.</li>
+                                <li><strong>“Log files”</strong> track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+                            </ul>
+                        </section>
 
-            <h3>Device and Log Information</h3>
-            <p>We may collect information about the device you use to access the
-              App, such as IP address, browser type, operating system, and other
-              device identifiers.</p>
+                        {/* SECTION: How Do We Use Your Personal Information? */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">How Do We Use Your Personal Information?</h2>
+                            <p className="mb-3">We use the personal information we collect from you and your customers in order to provide the Service and to operate the App. Additionally, we use this personal information to:</p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>Communicate with you;</li>
+                                <li>Optimize or improve the App;</li>
+                                <li>Provide you with information or advertising relating to our products or services; and</li>
+                                <li>Provide product enhancement, AI optimization, and analytics features.</li>
+                            </ul>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>2. How We Use Your
-              Information</h2>
-            <p>We use the information collected for the following purposes:</p>
-            <ul>
-              <li className={'ml-2'}><strong>App Functionality</strong>: To
-                provide product
-                enhancement, optimization, and analytics features as advertised.
-              </li>
-              <li className={'ml-2'}><strong>App Improvements</strong>: To
-                analyze usage patterns,
-                monitor app performance, and implement updates or improvements.
-              </li>
-              <li className={'ml-2'}><strong>Customer Support</strong>: To
-                address any support
-                inquiries or troubleshooting requests.
-              </li>
-              <li className={'ml-2'}><strong>Compliance</strong>: To comply with
-                Shopify&apos;s Terms of
-                Service and other applicable legal requirements.
-              </li>
-            </ul>
+                        {/* SECTION: Sharing Your Personal Information */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Sharing Your Personal Information</h2>
+                            <p className="mb-3">We may share your Personal Information with third parties to help us use your Personal Information, as described above. For example:</p>
+                            <ul className="list-disc pl-6 space-y-2 mb-4">
+                                <li>We work with third-party partners to provide core features, such as AI optimization services and data analysis tools.</li>
+                            </ul>
+                            <p>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</p>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>3. Sharing Your
-              Information</h2>
-            <p>We will not sell, rent, or trade your information. However, we
-              may
-              share information with:</p>
-            <ul>
-              <li className={'ml-2'}><strong>Third-Party Services</strong>:
-                Partners or services that
-                help us provide core features, such as AI optimization or data
-                analysis.
-              </li>
-              <li className={'ml-2'}><strong>Legal Compliance</strong>: When
-                required by law or if we
-                believe in good faith that disclosure is necessary to protect
-                our
-                rights or comply with a judicial proceeding.
-              </li>
-            </ul>
+                        {/* SECTION: Your Rights */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Your Rights</h2>
+                            <p className="mb-3">If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.</p>
+                            <p>Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States.</p>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>4. Data Retention</h2>
-            <p>We retain information as long as it is necessary to fulfill the
-              purposes outlined in this Privacy Policy. We may also retain
-              certain
-              information for compliance, auditing, or other legal
-              obligations.</p>
+                        {/* SECTION: Data Retention */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Data Retention</h2>
+                            <p>When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.</p>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>5. Security</h2>
-            <p>We take reasonable measures to protect your information from
-              unauthorized access, use, or disclosure. However, no internet
-              transmission is entirely secure, and we cannot guarantee complete
-              data security.</p>
+                        {/* SECTION: Changes */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Changes</h2>
+                            <p>We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.</p>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>6. Your Rights</h2>
-            <p>Depending on your location, you may have the right to:</p>
-            <ul>
-              <li className={'ml-2'}>Access, update, or delete personal data we
-                have about you
-              </li>
-              <li className={'ml-2'}>Restrict or object to certain data
-                processing practices
-              </li>
-              <li className={'ml-2'}>Withdraw consent, where applicable</li>
-            </ul>
-            <p>To exercise these rights, contact us at <a
-                href="mailto:policy@aishoplab.com">policy@aishoplab.com</a>.</p>
+                        {/* SECTION: Contact Us */}
+                        <section className="bg-gray-100 p-6 rounded-md mt-8">
+                            <h2 className="text-xl font-bold text-gray-900 mb-4 uppercase tracking-wide">Contact Us</h2>
+                            <p className="mb-4">For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at <a href="mailto:policy@aishoplab.com" className="text-blue-600 hover:underline">policy@aishoplab.com</a> or by mail using the details provided below:</p>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>7. Third-Party
-              Links</h2>
-            <p>The App may include links to third-party websites or services. We
-              are not responsible for the privacy practices of these third
-              parties, and we encourage you to review their privacy
-              policies.</p>
+                            <div className="font-medium text-gray-800 not-italic">
+                                <p>Ai Shop Lab</p>
+                                <p>[Re: Privacy Compliance Officer]</p>
+                                <p>Tešanjska 1, Sarajevo 71000, Bosnia and Herzegovina</p>
+                            </div>
+                        </section>
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>8. Changes to This
-              Privacy Policy</h2>
-            <p>We may update this Privacy Policy periodically. Any changes will
-              be
-              posted on this page, and if the changes are significant, we may
-              notify you via email or within the App.</p>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    );
+};
 
-            <h2 className={'pt-5 text-xl font-bold pb-1'}>9. Contact Us</h2>
-            <p>For any questions about this Privacy Policy or our privacy
-              practices, please contact us at:</p>
-            <p><strong>Email</strong>: <a
-                href="mailto:policy@aishoplab.com">policy@aishoplab.com</a></p>
-          </div>
-
-        </Container>
-      </div>
-  );
-  };
 export default NexGenPolicy;
