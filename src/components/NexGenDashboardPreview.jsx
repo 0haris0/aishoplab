@@ -67,7 +67,7 @@ const NexGenDashboardPreview = () => {
         </div>
 
         <div className="grid min-h-[560px] grid-cols-1 lg:grid-cols-[190px_1fr]">
-          <aside className="hidden border-r border-gray-200 bg-gray-950 p-4 text-white lg:block">
+          <aside className="relative hidden border-r border-gray-200 bg-gray-950 p-4 text-white lg:block">
             <div className="flex items-center gap-2 px-2 py-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500">
                 <Sparkles className="h-4 w-4" />
