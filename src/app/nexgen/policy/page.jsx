@@ -1,116 +1,203 @@
-'use client';
-
-import React from 'react';
 import Container from '@/components/Container';
 
+const contactEmail = 'nexgen@aishoplab.com';
+
 const NexGenPolicy = () => {
-    return (
-        <div className="text-black py-12 bg-gray-50">
-            <Container>
-                <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-sm">
+  return (
+    <main className="bg-gray-50 py-12 text-black">
+      <Container>
+        <article className="mx-auto max-w-4xl rounded-lg bg-white p-8 shadow-sm">
+          <header className="mb-8 border-b pb-6">
+            <h1 className="text-3xl font-bold text-gray-900">
+              NexGen Privacy Policy
+            </h1>
+            <div className="mt-4 space-y-1 text-sm text-gray-600">
+              <p>
+                <span className="font-semibold">Last updated:</span> July 3,
+                2026
+              </p>
+              <p>
+                <span className="font-semibold">Contact:</span>{' '}
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  {contactEmail}
+                </a>
+              </p>
+              <p>
+                <span className="font-semibold">Address:</span> Tešanjska 1,
+                71000 Sarajevo, Bosnia and Herzegovina
+              </p>
+            </div>
+          </header>
 
-                    {/* Header Section */}
-                    <div className="border-b pb-6 mb-6">
-                        <h1 className="text-3xl font-bold mb-4 text-gray-900">
-                            NexGen - Privacy Policy
-                        </h1>
-                        <div className="text-sm text-gray-600 space-y-1">
-                            <p><span className="font-semibold">Last updated:</span> {new Date().getFullYear()}</p>
-                            <p>
-                                <span className="font-semibold">Contact Email:</span>{' '}
-                                <a href="mailto:policy@aishoplab.com" className="text-blue-600 hover:underline">
-                                    policy@aishoplab.com
-                                </a>
-                            </p>
-                            <p><span className="font-semibold">Address:</span> Tešanjska 1, 71000 Sarajevo, Bosnia and Herzegovina</p>
-                        </div>
-                    </div>
+          <div className="space-y-8 leading-relaxed text-gray-700">
+            <section>
+              <p>
+                NexGen (the &quot;App&quot;) provides AI-assisted product
+                optimization, translations, content generation, and analytics to
+                merchants using Shopify. This policy explains what information
+                the App processes, why it is used, and the choices available to
+                merchants.
+              </p>
+            </section>
 
-                    {/* Content Section */}
-                    <div className="space-y-8 text-gray-700 leading-relaxed">
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Information the App processes
+              </h2>
+              <p className="mb-3">
+                After a merchant authorizes the App, NexGen may process the data
+                required for enabled features, including:
+              </p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li>
+                  <strong>Store information:</strong> shop name, domain, email,
+                  locale, and Shopify identifiers.
+                </li>
+                <li>
+                  <strong>Product and content data:</strong> titles,
+                  descriptions, images, tags, collections, product attributes,
+                  SEO fields, metafields, translations, blogs, and articles.
+                </li>
+                <li>
+                  <strong>Order and analytics data:</strong> order summaries,
+                  product performance, revenue, discounts, and other aggregated
+                  metrics used by analytics features.
+                </li>
+                <li>
+                  <strong>Customer-related data:</strong> only where required by
+                  an enabled feature and authorized through Shopify permissions.
+                </li>
+                <li>
+                  <strong>Usage and technical data:</strong> feature usage,
+                  application events, IP address, browser, operating system, and
+                  diagnostic logs used for security, support, and reliability.
+                </li>
+              </ul>
+            </section>
 
-                        <section>
-                            <p>
-                                <strong>NexGen</strong> (the &quot;App&quot;) provides product enhancement, optimization, and analytics services (the &quot;Service&quot;) to merchants who use Shopify to power their stores. This Privacy Policy describes how personal information is collected, used, and shared when you install or use the App in connection with your Shopify-supported store.
-                            </p>
-                        </section>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                How information is used
+              </h2>
+              <ul className="list-disc space-y-2 pl-6">
+                <li>Provide requested product optimization and AI features.</li>
+                <li>Generate and manage translations and store content.</li>
+                <li>Calculate analytics, reports, and store health insights.</li>
+                <li>Maintain security, prevent abuse, and diagnose errors.</li>
+                <li>Provide support and improve App performance.</li>
+                <li>Comply with applicable legal and Shopify requirements.</li>
+              </ul>
+            </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Personal Information the App Collects</h2>
-                            <p className="mb-3">When you install the App, we are automatically able to access certain types of information from your Shopify account:</p>
-                            <ul className="list-disc pl-6 space-y-2 mb-4">
-                                <li><strong>Store Information:</strong> Store name, email address, and other identifiers.</li>
-                                <li><strong>Product Data:</strong> Product titles, descriptions, images, and analytics data.</li>
-                                <li><strong>Order Data:</strong> Information regarding orders as needed for App features and functionalities.</li>
-                                <li><strong>Customer Data:</strong> Information regarding customers where applicable and authorized.</li>
-                            </ul>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Service providers and AI processing
+              </h2>
+              <p>
+                NexGen uses service providers to operate the App. When a merchant
+                requests an AI feature, the product or content fields required to
+                produce that result may be sent to OpenAI for processing. NexGen
+                limits the submitted data to the fields needed for the requested
+                operation. Infrastructure, email, monitoring, and analytics
+                providers may also process limited data on our behalf under their
+                applicable terms and security controls.
+              </p>
+              <p className="mt-3">
+                We do not sell merchant or customer personal information.
+              </p>
+            </section>
 
-                            <p className="mb-3">Additionally, we collect the following types of personal information from you and/or your customers once you have installed the App:</p>
-                            <ul className="list-disc pl-6 space-y-2 mb-4">
-                                <li><strong>Usage Data:</strong> Information about how you interact with the App, such as actions taken, pages viewed, and features used.</li>
-                                <li><strong>Device Information:</strong> Information about the device you use to access the App, such as your IP address, web browser details, time zone, and operating system.</li>
-                            </ul>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Data retention and deletion
+              </h2>
+              <p>
+                NexGen retains operational data only while it is needed to provide
+                the App, resolve support or security issues, and meet legal
+                obligations. Stored shop data is deleted or anonymized within 60
+                days after the App is uninstalled or after the related account
+                becomes inactive, unless a longer period is required for legal,
+                fraud-prevention, or security purposes.
+              </p>
+              <p className="mt-3">
+                Merchants may request access, correction, export, or deletion by
+                contacting us at{' '}
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  {contactEmail}
+                </a>
+                .
+              </p>
+            </section>
 
-                            <p className="mb-3">We collect personal information directly from the relevant individual, through your Shopify account, or using the following technologies:</p>
-                            <ul className="list-disc pl-6 space-y-2">
-                                <li><strong>“Cookies”</strong> are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit <a href="http://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">http://www.allaboutcookies.org</a>.</li>
-                                <li><strong>“Log files”</strong> track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
-                            </ul>
-                        </section>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                International processing
+              </h2>
+              <p>
+                Service providers may process information outside the merchant&apos;s
+                country, including in the United States. Where required, we use
+                appropriate contractual and organizational safeguards for such
+                transfers.
+              </p>
+            </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">How Do We Use Your Personal Information?</h2>
-                            <p className="mb-3">We use the personal information we collect from you and your customers in order to provide the Service and to operate the App. Additionally, we use this personal information to:</p>
-                            <ul className="list-disc pl-6 space-y-2">
-                                <li><strong>App Functionality:</strong> To provide product enhancement, AI optimization, and analytics features.</li>
-                                <li><strong>App Improvements:</strong> To analyze usage patterns, monitor app performance, and implement updates.</li>
-                                <li><strong>Customer Support:</strong> To communicate with you and address support inquiries.</li>
-                                <li><strong>Compliance:</strong> To comply with applicable laws and regulations.</li>
-                            </ul>
-                        </section>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Security
+              </h2>
+              <p>
+                We apply reasonable technical and organizational measures to
+                protect information against unauthorized access, alteration,
+                disclosure, or loss. No online service can guarantee absolute
+                security, but we review access and data handling as the App
+                evolves.
+              </p>
+            </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Sharing Your Personal Information</h2>
-                            <p className="mb-3">We may share your Personal Information with third parties to help us use your Personal Information, as described above. For example:</p>
-                            <ul className="list-disc pl-6 space-y-2 mb-4">
-                                <li><strong>Service Providers:</strong> We work with third-party partners to provide core features, such as AI optimization services and data analysis tools.</li>
-                            </ul>
-                            <p>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</p>
-                        </section>
+            <section>
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Changes to this policy
+              </h2>
+              <p>
+                We may update this policy to reflect changes to the App, service
+                providers, legal requirements, or data practices. The current
+                version and its effective date will remain available on this
+                page.
+              </p>
+            </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Your Rights (For European Residents)</h2>
-                            <p className="mb-3">If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.</p>
-                            <p>Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States.</p>
-                        </section>
-
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Data Retention</h2>
-                            <p>We will maintain the information collected for our records for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless and until you ask us to delete this information. We may also retain certain information for compliance, auditing, or other legal obligations.</p>
-                        </section>
-
-                        <section>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Changes</h2>
-                            <p>We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.</p>
-                        </section>
-
-                        <section className="bg-gray-50 p-6 rounded-md border border-gray-100">
-                            <h2 className="text-xl font-semibold text-gray-900 mb-4">Contact Us</h2>
-                            <p className="mb-4">For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at <a href="mailto:policy@aishoplab.com" className="text-blue-600 hover:underline">policy@aishoplab.com</a> or by mail using the details provided below:</p>
-
-                            <div className="font-medium text-gray-800">
-                                <p>Ai Shop Lab</p>
-                                <p>Tešanjska 1,</p>
-                                <p>Sarajevo 71000,</p>
-                                <p>Bosnia and Herzegovina</p>
-                            </div>
-                        </section>
-
-                    </div>
-                </div>
-            </Container>
-        </div>
-    );
+            <section className="rounded-md border border-gray-100 bg-gray-50 p-6">
+              <h2 className="mb-4 text-xl font-semibold text-gray-900">
+                Contact us
+              </h2>
+              <p>
+                Questions or privacy requests can be sent to{' '}
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  {contactEmail}
+                </a>
+                .
+              </p>
+              <div className="mt-4 font-medium text-gray-800">
+                <p>Ai Shop Lab</p>
+                <p>Tešanjska 1</p>
+                <p>71000 Sarajevo</p>
+                <p>Bosnia and Herzegovina</p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </Container>
+    </main>
+  );
 };
 
 export default NexGenPolicy;
